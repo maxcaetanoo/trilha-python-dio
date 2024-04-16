@@ -1,19 +1,19 @@
-nome = "gUIlherME"
+nome = "MaXsUel"
 
+print(nome)
 print(nome.upper())
 print(nome.lower())
 print(nome.title())
+print(nome.capitalize())
+print(nome.center(20, '='))
+print('_'.join(nome))
+print(nome.ljust(30), end='.\n')
+print(nome.rjust(30), end='.\n')
 
-texto = "  Olá mundo!    "
+print('---'*30)
+curso = '    python    '
 
-print(texto + ".")
-print(texto.strip() + ".")
-print(texto.rstrip() + ".")
-print(texto.lstrip() + ".")
-
-menu = "Python"
-
-print("####" + menu + "####")
-print(menu.center(14))
-print(menu.center(14, "#"))
-print("-".join(menu))
+print(curso + '.')
+print(curso.strip() + '.')
+print(curso.lstrip() + '.')
+print(curso.rstrip() + '.')
