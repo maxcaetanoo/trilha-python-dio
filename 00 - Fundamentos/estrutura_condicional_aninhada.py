@@ -1,29 +1,27 @@
-conta_normal = False
-conta_universitaria = False
-conta_especial = True
+conta_normal =  False
+conta_universitária = False
 
 saldo = 2000
-saque = 1500
 cheque_especial = 450
 
-if conta_normal:
+print(f'''1. Saque conta pf
+2. Saque conta universitária''', end="\n\n")
 
+opt = ' '
+while opt not in [1,2]:
+    opt = int(input("digite o indice da operação desejada: "))
+
+saque = float(input("Digite o valor que deseja sacar: "))
+
+if opt == 1:
     if saldo >= saque:
         print("Saque realizado com sucesso!")
     elif saque <= (saldo + cheque_especial):
-        print("Saque realizado com uso do cheque especial!")
+        print("Saque efetuado com cheque especial")
     else:
-        print("Não foi possivel realizar o saque, saldo insuficiente!")
-
-elif conta_universitaria:
-
+        print("Saque não realizado, saldo insuficiente!")
+elif opt == 2:
     if saldo >= saque:
         print("Saque realizado com sucesso!")
     else:
-        print("Saldo insuficiente!")
-
-elif conta_especial:
-    print("Conta especial selecionada!")
-
-else:
-    print("Sistema não reconheceu seu tipo de conta, entre em contato com o seu gerente.")
+        print("Saque não realizado, saldo insuficiente!")

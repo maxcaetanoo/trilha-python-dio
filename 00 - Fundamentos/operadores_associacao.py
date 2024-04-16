@@ -1,6 +1,13 @@
-frutas = ["limao", "uva"]
-curso = "Curso de python"
+curso = "Curso de Python"
+frutas = ["laranja", "uva", "limão"]
+saques = [1500, 100]
 
-print("laranja" not in frutas)
-print("limao" in frutas)
 print("Python" in curso)
+
+print("maçã" not in frutas)
+
+print(200 in saques)
+
+batata = "batata"
+
+print("a" in batata)
